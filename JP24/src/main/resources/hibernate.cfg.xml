@@ -11,8 +11,8 @@
         <!-- JDBC Database connection settings -->
         <property name="connection.driver_class">org.mariadb.jdbc.Driver</property>
         <property name="connection.url">jdbc:mariadb://localhost:3306/edunovajp24_hib</property>
-        <property name="connection.username">edunova</property>
-        <property name="connection.password">edunova</property>
+        <property name="connection.username">valagic</property>
+        <property name="connection.password">valagic</property>
         <!-- JDBC connection pool settings ... using built-in test pool -->
         <property name="connection.pool_size">5</property>
         <!-- Select our SQL dialect -->
@@ -43,18 +43,8 @@
 
 
         <!-- Ovdje navodimo mapirane klase -->
-        <mapping class="edunova.jp24.vjezbanjemapiranje.osnovno.Racunalo" />  
-        
-        <mapping class="edunova.jp24.vjezbanjemapiranje.prilagodeno.Mobitel" />
-        
-        <mapping class="edunova.jp24.vjezbanjemapiranje.nasljedivanje.Automobil" />
-        <mapping class="edunova.jp24.vjezbanjemapiranje.nasljedivanje.Bicikl" />
-       
-        <mapping class="edunova.jp24.vjezbanjemapiranje.vezavisenapremajedan.Grad" />
-         <mapping class="edunova.jp24.vjezbanjemapiranje.vezavisenapremajedan.Igrac" />
-         
-         <mapping class="edunova.jp24.vjezbanjemapiranje.vezavisenapremavise.Slika" />
-         <mapping class="edunova.jp24.vjezbanjemapiranje.vezavisenapremavise.Oznaka" />
+        <mapping class="projekt.jp24.vjezbanjemapiranje.osnovno.Racunalo" />  
+
          
     </session-factory>
 </hibernate-configuration>
