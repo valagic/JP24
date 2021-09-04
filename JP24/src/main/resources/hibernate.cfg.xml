@@ -50,6 +50,10 @@
         <mapping class="projekt.jp24.vjezbanjemapiranje.prilagodeno.Mobitel" />
         <mapping class="projekt.jp24.vjezbanjemapiranje.prilagodeno.Ucionica" />
         <mapping class="projekt.jp24.vjezbanjemapiranje.prilagodeno.Igraliste" />
+        
+        <mapping class="projekt.jp24.vjezbanjemapiranje.nasljedivanje.AutomobilDva" />
+        <mapping class="projekt.jp24.vjezbanjemapiranje.nasljedivanje.Bicikl" />
+        
          
     </session-factory>
 </hibernate-configuration>
