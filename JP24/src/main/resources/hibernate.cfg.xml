@@ -47,8 +47,9 @@
         <mapping class="projekt.jp24.vjezbanjemapiranje.osnovno.Olovka" /> 
         <mapping class="projekt.jp24.vjezbanjemapiranje.osnovno.Auto" /> 
         
-           
-
+        <mapping class="projekt.jp24.vjezbanjemapiranje.prilagodeno.Mobitel" />
+        <mapping class="projekt.jp24.vjezbanjemapiranje.prilagodeno.Ucionica" />
+        <mapping class="projekt.jp24.vjezbanjemapiranje.prilagodeno.Igraliste" />
          
     </session-factory>
 </hibernate-configuration>

@@ -14,14 +14,14 @@ import javax.persistence.Id;
  *
  * @author valagic
  */
-@Entity(name = "phones")
-public class Mobitel {
+@Entity(name = "classroom")
+public class Ucionica {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String boja;
-    private String model;
+    private int brojUcenika;
+    private int brojStolova;
 
     public Long getId() {
         return id;
@@ -31,21 +31,22 @@ public class Mobitel {
         this.id = id;
     }
 
-    public String getBoja() {
-        return boja;
+    public int getBrojUcenika() {
+        return brojUcenika;
     }
 
-    public void setBoja(String boja) {
-        this.boja = boja;
+    public void setBrojUcenika(int brojUcenika) {
+        this.brojUcenika = brojUcenika;
     }
 
-    public String getModel() {
-        return model;
+    public int getBrojStolova() {
+        return brojStolova;
     }
 
-    public void setModel(String model) {
-        this.model = model;
+    public void setBrojStolova(int brojStolova) {
+        this.brojStolova = brojStolova;
     }
+    
     
     
 }
