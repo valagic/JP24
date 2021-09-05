@@ -54,6 +54,9 @@
         <mapping class="projekt.jp24.vjezbanjemapiranje.nasljedivanje.AutomobilDva" />
         <mapping class="projekt.jp24.vjezbanjemapiranje.nasljedivanje.Bicikl" />
         
+        <mapping class="projekt.jp24.vjezbanjemapiranje.nasljedivanje.Igrac" />
+        <mapping class="projekt.jp24.vjezbanjemapiranje.nasljedivanje.Trener" />
+        
          
     </session-factory>
 </hibernate-configuration>
