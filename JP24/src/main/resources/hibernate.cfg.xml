@@ -62,6 +62,9 @@
         <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremajedan.Opcina" />
         <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremajedan.Stanovnik" />
         
+        <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremavise.Oznaka" />
+        <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremavise.Slika" />
+        
          
     </session-factory>
 </hibernate-configuration>
