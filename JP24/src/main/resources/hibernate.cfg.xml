@@ -64,6 +64,8 @@
         
         <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremavise.Oznaka" />
         <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremavise.Slika" />
+         <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremavise.Laptop" />
+        <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremavise.Korisnik" />
         
          
     </session-factory>
