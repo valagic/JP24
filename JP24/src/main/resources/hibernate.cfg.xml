@@ -42,7 +42,7 @@
         <property name="hibernate.dbcp.maxWaitMillis">-1</property>
 
 
-        <!-- Ovdje navodimo mapirane klase -->
+        <!-- Ovdje navodimo mapirane klase 
         <mapping class="projekt.jp24.vjezbanjemapiranje.osnovno.Racunalo" />
         <mapping class="projekt.jp24.vjezbanjemapiranje.osnovno.Olovka" /> 
         <mapping class="projekt.jp24.vjezbanjemapiranje.osnovno.Auto" /> 
@@ -64,9 +64,15 @@
         
         <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremavise.Oznaka" />
         <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremavise.Slika" />
-         <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremavise.Laptop" />
-        <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremavise.Korisnik" />
+        <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremavise.Laptop" />
+        <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremavise.Korisnik" />-->
         
+         <mapping class="projekt.jp24.zadacamapiranjeedunovajp24baze.Clan" />
+         <mapping class="projekt.jp24.zadacamapiranjeedunovajp24baze.Grupa" />
+         <mapping class="projekt.jp24.zadacamapiranjeedunovajp24baze.Smjer" />
+         <mapping class="projekt.jp24.zadacamapiranjeedunovajp24baze.Osoba" />
+         <mapping class="projekt.jp24.zadacamapiranjeedunovajp24baze.Polaznik" />
+         <mapping class="projekt.jp24.zadacamapiranjeedunovajp24baze.Predavac" />
          
     </session-factory>
 </hibernate-configuration>
