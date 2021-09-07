@@ -5,8 +5,11 @@
  */
 package projekt.jp24.zadacamapiranjeedunovajp24baze;
 
+import com.sun.istack.NotNull;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 
@@ -15,19 +18,19 @@ import javax.persistence.ManyToOne;
  * @author valagic
  */
 @Entity
-    public class Polaznik{
+    public class Polaznik extends Entitet{
     
     @Id
     private Long sifra;
  
     @ManyToOne
+    @NotNull
+    @JoinColumn(name = "osoba")
     private Osoba osoba;
     
     private Integer brojUgovora;
 
-    public Long getSifra() {
-        return sifra;
-    }
+    
 
     public void setSifra(Long sifra) {
         this.sifra = sifra;

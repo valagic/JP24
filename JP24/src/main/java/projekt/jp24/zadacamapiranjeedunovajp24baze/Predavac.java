@@ -5,10 +5,13 @@
  */
 package projekt.jp24.zadacamapiranjeedunovajp24baze;
 
+import com.sun.istack.NotNull;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 
@@ -17,20 +20,20 @@ import javax.persistence.ManyToOne;
  * @author valagic
  */
 @Entity
-    public class Predavac{
+    public class Predavac extends Entitet{
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long sifra;
 
     @ManyToOne
+    @NotNull
+    @JoinColumn(name = "osoba")
     private Osoba osoba;
     
     private Integer iban;
 
-    public Long getSifra() {
-        return sifra;
-    }
+    
 
     public void setSifra(Long sifra) {
         this.sifra = sifra;

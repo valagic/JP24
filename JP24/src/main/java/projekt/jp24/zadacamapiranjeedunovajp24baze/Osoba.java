@@ -14,21 +14,22 @@ import javax.persistence.Id;
  * @author valagic
  */
 @Entity
-    public  class Osoba{
+    public  class Osoba extends Entitet{
     
     @Id
     private Long sifra;
     
+    @Column(nullable = false)
     private String ime;
+    @Column(nullable = false)
     private String prezime;
     
     @Column(columnDefinition = "char(11)")
     private Integer oib;
+    
     private String email;
 
-    public Long getSifra() {
-        return sifra;
-    }
+    
 
     public void setSifra(Long sifra) {
         this.sifra = sifra;

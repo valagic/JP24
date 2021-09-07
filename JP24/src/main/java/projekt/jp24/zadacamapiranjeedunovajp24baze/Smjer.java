@@ -6,6 +6,7 @@
 package projekt.jp24.zadacamapiranjeedunovajp24baze;
 
 import java.math.BigDecimal;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -14,19 +15,22 @@ import javax.persistence.Id;
  * @author valagic
  */
 @Entity
-    public class Smjer{
+    public class Smjer extends Entitet{
     
     @Id
     private Long sifra;
     
+    @Column(nullable = false)
     private String naziv;
+    
+    @Column(nullable = false)
     private Integer trajanje;
+    
     private BigDecimal cijena;
+    
     private Boolean certifikat;
 
-    public Long getSifra() {
-        return sifra;
-    }
+   
 
     public void setSifra(Long sifra) {
         this.sifra = sifra;

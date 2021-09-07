@@ -5,11 +5,14 @@
  */
 package projekt.jp24.zadacamapiranjeedunovajp24baze;
 
+import com.sun.istack.NotNull;
 import java.util.Date;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 /**
@@ -23,12 +26,18 @@ public class Grupa{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long sifra;
     
+    @Column(nullable = false)
     private String naziv;
  
     private Date datumPocetka;
+    
     @ManyToOne
+    @NotNull
+    @JoinColumn(name = "smjer")
     private Smjer smjer;
+    
     @ManyToOne
+    @JoinColumn(name = "predavac")
     private Predavac predavac;
 
     public Long getSifra() {

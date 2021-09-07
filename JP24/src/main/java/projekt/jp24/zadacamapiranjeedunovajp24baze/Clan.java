@@ -7,26 +7,30 @@ package projekt.jp24.zadacamapiranjeedunovajp24baze;
 
 
 
+
+import com.sun.istack.NotNull;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-
-
-
 
 /**
  *
  * @author valagic
  */
 @Entity
-public  class Clan {
+public  class Clan extends Entitet{
     
-    @Id
-    private Long id;
+    
     @ManyToOne
+    @NotNull
+    @JoinColumn(name = "grupa")
     private Grupa grupa;
     
     @ManyToOne
+    @NotNull
+    @JoinColumn(name = "polaznik")
     private Polaznik polaznik;
 
     public Grupa getGrupa() {
@@ -44,14 +48,4 @@ public  class Clan {
     public void setPolaznik(Polaznik polaznik) {
         this.polaznik = polaznik;
     }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-    
-    
 }
