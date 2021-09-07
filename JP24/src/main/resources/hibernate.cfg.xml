@@ -57,6 +57,9 @@
         <mapping class="projekt.jp24.vjezbanjemapiranje.nasljedivanje.Igrac" />
         <mapping class="projekt.jp24.vjezbanjemapiranje.nasljedivanje.Trener" />
         
+        <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremajedan.Igracc" />
+        <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremajedan.Grad" />
+        
          
     </session-factory>
 </hibernate-configuration>
