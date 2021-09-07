@@ -59,6 +59,8 @@
         
         <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremajedan.Igracc" />
         <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremajedan.Grad" />
+        <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremajedan.Opcina" />
+        <mapping class="projekt.jp24.vjezbanjemapiranje.visenapremajedan.Stanovnik" />
         
          
     </session-factory>
